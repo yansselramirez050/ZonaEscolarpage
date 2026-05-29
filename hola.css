@@ -253,3 +253,43 @@ font-weight: 500;
     position: relative;
     top: 40px;
 }
+/* ==========================================================================
+   12. ESTILOS DEL CÓDIGO QR EN EL FOOTER
+   ========================================================================== */
+.qr-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.qr-img {
+    width: 110px;
+    height: 110px;
+    /* Un QR necesita fondo blanco para que las cámaras lo lean bien */
+    background-color: #ffffff; 
+    padding: 6px;
+    border-radius: 12px;
+    border: 2px solid var(--cyan-electrico);
+    box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.qr-img:hover {
+    transform: scale(1.15) translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 245, 255, 0.6);
+}
+
+.qr-texto {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--cyan-electrico);
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.qr-texto i {
+    margin-right: 5px;
+}
